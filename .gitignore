@@ -36,7 +36,6 @@
 
 # Ignore any configuration files with private settings
 /src/main/resources/bootstrap.yml
-/src/main/resources/application.properties
 /src/main/resources/bootstrap.properties
 
 # Ignore other potentially sensitive configuration files
