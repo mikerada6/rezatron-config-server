@@ -1,33 +1,54 @@
-HELP.md
-target/
-!.mvn/wrapper/maven-wrapper.jar
-!**/src/main/**/target/
-!**/src/test/**/target/
+# Maven target directory
+/target/
 
-### STS ###
-.apt_generated
-.classpath
-.factorypath
-.project
-.settings
-.springBeans
-.sts4-cache
+# Log files
+*.log
 
-### IntelliJ IDEA ###
-.idea
-*.iws
-*.iml
-*.ipr
+# IntelliJ IDEA related files
+/.idea/
+/*.iml
+/*.iws
 
-### NetBeans ###
-/nbproject/private/
-/nbbuild/
-/dist/
-/nbdist/
-/.nb-gradle/
-build/
-!**/src/main/**/build/
-!**/src/test/**/build/
+# Eclipse related files
+/.classpath
+/.project
+/.settings/
 
-### VS Code ###
-.vscode/
+# VS Code related files
+/.vscode/
+
+# Temporary files
+*.tmp
+*.temp
+*.swp
+
+# MacOS system files
+.DS_Store
+
+# Environment variable files (local development)
+/.env
+
+# Ignore application files containing sensitive information
+# Add sensitive profiles and configurations to the environment during deployment, not here
+/src/main/resources/application.yml
+/src/main/resources/application-dev.yml
+/src/main/resources/application-prod.yml
+
+# Ignore any configuration files with private settings
+/src/main/resources/bootstrap.yml
+/src/main/resources/bootstrap.properties
+
+# Ignore other potentially sensitive configuration files
+/secret.properties
+*.jks
+
+# Vault related files
+# If any Vault configuration files or tokens are stored locally, ignore them
+/vault-token
+/vault-config.yml
+
+# Ignore test output
+/test-output/
+
+# Ignore build output for WARs
+*.war
